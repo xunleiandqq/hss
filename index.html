@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn" >
+
+<head>
+
+   <meta charset="utf-8"> 
+
+   <title>网站框架</title>
+
+   <link href="https://cdn.staticfile.net/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+   <link href="https://cdn.staticfile.net/bootstrap/5.3.2/css/bootstrap.bundle.min.css" rel="stylesheet">    
+
+   <script src="https://cdn.staticfile.net/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+
+   <script src="https://cdn.staticfile.net/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+   
+
+   <link rel="stylesheet" href="https://cdn.staticfile.net/bootstrap-icons/1.11.3/font/bootstrap-icons.css">
+
+
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+   
+
+   <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+   <meta name="author" content="刘杰华">
+
+   <!-- 网站描述，显示在搜索结果中 -->
+
+   <meta name="description" content="个人网站"/>
+
+   <!-- 关键词，3-10个之间，用英文逗号隔开 -->
+
+   <meta name="keywords" content="测试,HTML, meta tag, tag reference"/>
+
+
+
+</head>
+
+<body class="bg-gradient" style="color: rgb(255, 255, 255);">
+
+
+
+<!-- 导航栏 *************************************************************-->
+
+    <style>
+
+        .nav-tabs {
+
+          display: flex;
+
+          flex-wrap: nowrap;
+
+          white-space: nowrap;
+            }
+
+
+
+
+
+    </style>
+
+
+
+    <div class="container-fluid fixed-top">
+
+        <div class="row bg-light">
+
+      
+
+            <div class="col-10">
+
+                <ul class="nav nav-tabs ">
+
+                    <li class="nav-item">
+
+                      <a class="nav-link active" href="index.html"><kbd class="lead">Home</kbd></a>
+
+                    </li>
+
+                    <!-- 
+
+                    <li class="nav-item">
+
+                      <a class="nav-link" href="map.html"><kbd class="lead">Map</kbd></a>
+
+                    </li>
+
+                    -->
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+
+                          <kbd class="lead">More</kbd> 
+
+                        </a>
+
+                        <div class="dropdown-menu">
+
+                          <a class="dropdown-item" href="#"><kbd class="lead">Link 1</kbd></a>
+
+                          <a class="dropdown-item" href="video.html" target="_blank"><kbd class="lead">Video</kbd></a>
+
+                          <a class="dropdown-item" href="map.html"target="_blank"><kbd class="lead">Map</kbd></a>
+
+                          <div class="dropdown-divider"></p></div>
+                          <h5>Language</h5>
+
+                          <a href="#" class="dropdown-item" id="lang-en"><kbd class="lead">English</kbd></a>
+
+                          <a href="#" class="dropdown-item" id="lang-zh"><kbd class="lead">中文</kbd></a>
+                        </div>
+
+                    </li>
+
+
+
+
+
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  
+                          <kbd class="lead">Contact</kbd></a>
+  
+                      </li>
+
+                </ul>
+
+            </div>
+
+            <div class="col"></div>
+
+        </div>
+
+    </div>
+
+<!-- 导航栏 *************************************************************-->
+
+
+
+<!-- 轮播图 **************************************************************-->
+
+    <div class="container" style="height: 100% ;">  
+
+        <div class="row mt-5 "   >
+
+            <h2 style="color: black;" ><div data-translate="xiangceweiweizhi">精彩瞬间</div></h2>
+
+            <div class="col-12">
+
+           
+
+                <div>
+
+
+
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"  >
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+
+                                <img src="img/robot-g.png" class="d-block w-100 " alt="Image 1">
+
+                            </div>
+
+                            <div class="carousel-item">
+
+                                <img src="img/robot-g2.png" class="d-block w-100 " alt="Image 2">
+
+                            </div>
+
+                            <div class="carousel-item">
+
+                                <a href="https://www.baidu.com" target="_blank">
+
+                                    <img src="img/robot-g.png" class="d-block w-100 " alt="Image 3">
+
+                                </a>
+
+                            </div>
+
+                                
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                        <span class="visually-hidden">Previous</span>
+
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                        <span class="visually-hidden">Next</span>
+
+                    </button>
+
+                     
+
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+    </div>      
+
+<!-- 轮播图 **************************************************************-->
+
+
+
+<!-- 内容范围**************************************************************-->
+
+<div class="container mt-5">
+
+    <div class="row mt-5 "   ></div>
+
+    
+
+    <div class="col"></div>
+
+    <div class="col-10">
+
+        <div class="card">  
+
+            
+
+            <div class="card-body">
+
+                <h5 class="card-title"><div data-translate="kapianname1">企业动态</div></h5>
+
+                <iframe src="http://m.nobox.top/wz.html" width="100%" height="300" style="border:none;">
+
+                    您的浏览器不支持iframe标签。
+
+                </iframe>
+
+            </div>
+
+              
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="col"></div>
+
+    
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="container mt-5">
+
+    <div class="row mt-5 "   ></div>
+
+    
+
+    <div class="col"></div>
+
+    <div class="col-10">
+
+        <div class="card">  
+
+            
+
+            <div class="card-body">
+
+                <h5 class="card-title"><div data-translate="kapianname2">行业今日新闻</div></h5>
+
+                <iframe src="http://m.nobox.top/news.html" width="100%" height="300" style="border:none;">
+
+                    您的浏览器不支持iframe标签。
+
+                </iframe>
+
+            </div>
+
+              
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="col"></div>
+
+    
+
+
+
+
+
+</div>
+
+
+
+<!-- 内容范围*******************************************************************-->
+
+
+
+<!-- 左侧边栏 
+
+    id="offcanvasExample2" id="offcanvasExampleLabel2" data-bs-target="#myModal2" **********************************************************************-->
+
+    
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"><div data-translate="cebianlanname">联系方式</div></h5>
+
+            <button type="button" class="btn btn-danger" data-bs-dismiss="offcanvas" aria-label="Close">关闭</button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <div>
+
+                <p>这里是侧边栏内容</p>
+
+            </div>
+
+            <div class="container" >
+
+                <i class="bi bi-wechat" style="font-size: 6rem; color: rgb(8, 192, 85);"></i>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+
+                    wechat
+
+                </button>
+
+                
+
+                <br/>
+
+        
+
+                <i class="bi bi-whatsapp" style="font-size: 6rem; color: rgb(8, 192, 85);"></i>
+
+                <button type="button" class="btn">
+
+                    whatsapp
+
+                </button>
+
+                
+
+                
+
+                <br/>
+
+                <i class="bi bi-linkedin" style="font-size: 6rem; color: rgba(52, 80, 243, 0.856);"></i>
+
+                <button type="button" class="btn">
+
+                    <a href="#">linkedin</a>
+
+                </button>
+
+                
+
+                <br/>
+
+                <i class="bi bi-facebook" style="font-size: 6rem; color: rgba(52, 80, 243, 0.856);"></i> 
+
+                <button type="button" class="btn">
+
+                    facebook
+
+                </button>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    
+
+<!-- 左侧边栏 **********************************************************************-->
+
+
+
+<!--wechat myModal模态框
+
+    id="myModal2" aria-labelledby="exampleModalLabel2" ************************************************************ -->
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-fullscreen-sm-down">
+
+            <div class="modal-content">
+
+        
+
+                <!-- 模态框头部 -->
+
+                <div class="modal-header">
+
+                    <h4 class="modal-title">模态框标题</h4>
+
+
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+
+                </div>
+
+                
+
+        
+
+                <!-- 模态框内容 -->
+
+                <div class="modal-body">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <i class="bi bi-lightbulb"></i>
+
+                            这里写内容
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        
+
+                <!-- wechat myModal模态框底部 -->
+
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+
+                </div>
+
+        
+
+            </div>
+
+        </div>
+
+    </div>
+
+<!--wechat myModal模态框************************************************************ -->
+
+
+
+<!-- Toast全屏 ********************************************************************-->
+
+
+
+<!-- 触发Toast的按钮**********
+
+    <button type="button" class="btn btn-primary" onclick="showToast()">显示全屏Toast</button>
+
+
+
+-->
+
+    
+
+
+
+    <div class="toast-container position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
+
+            <div class="toast-header">
+
+                <strong class="me-auto">全屏Toast</strong>
+
+                <button type="button" class="btn btn-danger" data-bs-dismiss="toast" aria-label="Close">关闭</button>
+
+            </div>
+
+            <div class="toast-body">
+
+                这是一个全屏Toast消息。
+
+
+
+            </div>
+
+
+
+            <br/>
+
+            <iframe id="bilibiliVideo" src="//player.bilibili.com/player.html?isOutside=true&aid=910124070&bvid=BV1iM4y1y7oA&cid=1097137119&p=1&autoplay=0" width="100%" height="700" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+          
+
+        </div>
+
+    </div>
+
+
+
+    <style>
+
+        /* 自定义全屏Toast样式 */
+
+        .toast-container {
+
+          z-index: 1055; /* 确保Toast在最上层 */
+
+        }
+
+        
+
+        .toast-container .toast {
+
+          width: 100vw;
+
+          max-width: none;
+
+          height: 100vh;
+
+          margin: 0;
+
+          background-color: rgb(255, 255, 255); /* 背景颜色和透明度 */
+
+          color: rgb(0, 0, 0); /* 文字颜色 */
+
+        }
+
+    </style>
+
+        
+
+    <script>
+
+        function showToast() {
+
+          var toastEl = document.getElementById('myToast');
+
+          var toast = new bootstrap.Toast(toastEl);
+
+          toast.show();
+
+        }
+
+    </script>
+
+<!-- Toast全屏 ********************************************************************-->
+
+ 
+
+
+
+<footer class="footer mt-auto bg-light">
+
+    <div class="container text-center">
+
+        <p class="text-muted">Copyright © 2024 刘杰华.</p>
+
+        <nav>
+
+            <a href="/html/">HTML</a> |
+
+            <a href="/css/">CSS</a> |
+
+            <a href="/js/">JavaScript</a> |
+
+            
+
+        </nav>
+
+    </div>
+
+</footer>
+
+
+<script src="language.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+
+#myIframe {
+  position: fixed; /* 或者使用 absolute，根据需求 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* 设置一个高的z-index值 */
+}
+
+
+
+
+/*在下面的代码中，可以看到img-responsive class 为图像赋予了 max-width: 100%; 
+和 height: auto; 属性，可以让图像按比例缩放，不超过其父元素的尺寸。
+<img src="..." class="img-responsive" alt="响应式图像">
+*/
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+/*使用 body {margin: 0;} 来移除 body 的边距
+第一条规则设置 body 的默认字体样式为 "Helvetica Neue", Helvetica, Arial, sans-serif。
+
+第二条规则设置文本的默认字体大小为 14 像素。
+
+第三条规则设置默认的行高度为 1.428571429。
+
+第四条规则设置默认的文本颜色为 #333333。
+
+最后一条规则设置默认的背景颜色为白色*/
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    background-color: #ffffff;
+  }
+  
+
+
+
+/*当鼠标悬停在链接上，或者点击过的链接，颜色会被设置为 #2a6496。同时，会呈现一条下划线。
+
+除此之外，点击过的链接，会呈现一个颜色码为 #333 的细的虚线轮廓。另一条规则是设置轮廓为 5 像素宽，
+且对于基于 webkit 浏览器有一个 -webkit-focus-ring-color 的浏览器扩展。轮廓偏移设置为 -2 像素。
+
+以上所有这些样式都可以在 scaffolding.less 中找到。*/
+a:hover,
+a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  }
+   
+  .glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+  .background-liquid {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #e9e9e9;
+    overflow: hidden;
+  }
+   
+  .liquid {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    height: 100px;
+    background-color: #3498db;
+    animation: liquid-animation 5s linear infinite;
+  }
+   
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #3498db;
+    opacity: 0.4;
+    animation: wave-animation 5s linear infinite;
+  }
+   
+  @keyframes liquid-animation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+   
+  @keyframes wave-animation {
+    0% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0.4;
+    }
+  }
+

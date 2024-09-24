@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-cn" >
+<head>
+   <meta charset="utf-8"> 
+   <title>video page</title>
+   <link href="https://cdn.staticfile.net/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdn.staticfile.net/bootstrap/5.3.2/css/bootstrap.bundle.min.css" rel="stylesheet">    
+   <script src="https://cdn.staticfile.net/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+   <script src="https://cdn.staticfile.net/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+   
+   <link rel="stylesheet" href="https://cdn.staticfile.net/bootstrap-icons/1.11.3/font/bootstrap-icons.css">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+   <meta name="apple-mobile-web-app-capable" content="yes"/>
+   <meta name="author" content="刘杰华">
+   <!-- 网站描述，显示在搜索结果中 -->
+   <meta name="description" content="这是测试用的HTML页面"/>
+   <!-- 关键词，3-10个之间，用英文逗号隔开 -->
+   <meta name="keywords" content="测试,HTML, meta tag, tag reference"/>
+
+</head>
+<body class="bg-gradient" style="color: rgb(255, 255, 255);">
+
+
+  <div class="container " style="margin-left: 0;"> 
+    <div class="list-group list-group-flush" >
+      <a href="onevideo1.html" class="list-group-item list-group-item-action" target="_blank"><i class="bi bi-book">&nbsp;&nbsp;&nbsp;视频链接1</i></a>
+      <button type="button" class="btn btn-primary text-start" onclick="showToast2()"><i class="bi bi-camera-reels"></i>&nbsp;&nbsp;&nbsp;视频链接2</button>
+      <a href="onevideo2.html" class="list-group-item list-group-item-action" target="_blank"><i class="bi bi-book">&nbsp;&nbsp;&nbsp;视频链接3</i></a>
+      <a href="onevideo3.html" class="list-group-item list-group-item-action" target="_blank"><i class="bi bi-book">&nbsp;&nbsp;&nbsp;视频链接4</i></a>
+      <a href="#" class="list-group-item list-group-item-action" target="_blank"><i class="bi bi-book">&nbsp;&nbsp;&nbsp;视频链接5</i></a>
+      <a href="#" class="list-group-item list-group-item-action" target="_blank"><i class="bi bi-book">&nbsp;&nbsp;&nbsp;视频链接6</i></a>
+      <a href="#" class="list-group-item list-group-item-action" target="_blank"><i class="bi bi-book">&nbsp;&nbsp;&nbsp;视频链接7</i></a>
+      <a href="#" class="list-group-item list-group-item-action" target="_blank"><i class="bi bi-book">&nbsp;&nbsp;&nbsp;视频链接8</i></a>
+      <a href="#" class="list-group-item list-group-item-action" target="_blank"><i class="bi bi-book">&nbsp;&nbsp;&nbsp;视频链接9</i></a>
+    </div>
+
+  </div>
+
+<!-- Toast全屏 1********************************************************************-->
+  <div class="toast-container position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
+        <div class="toast-header">
+            <strong class="me-auto">视频</strong>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="toast" aria-label="Close">关闭</button>
+        </div>
+        <div class="toast-body">
+            这是一个全屏MP4。
+
+            <br/>
+
+
+        </div>
+
+        
+        
+
+        </video>
+      
+    </div>
+</div>
+
+<!-- 自定义全屏Toast样式 -->
+<style>
+  /* 自定义全屏Toast样式 */
+  .toast-container {
+    z-index: 1055; /* 确保Toast在最上层 */
+  }
+  
+  .toast-container .toast {
+    width: 100vw;
+    max-width: none;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(255, 255, 255); /* 背景颜色和透明度 */
+    color: rgb(0, 0, 0); /* 文字颜色 */
+  }
+</style>
+  
+<script>
+  function showToast() {
+    var toastEl = document.getElementById('myToast');
+    var toast = new bootstrap.Toast(toastEl);
+    toast.show();
+  }
+</script>
+<!-- Toast全屏 ********************************************************************-->
+
+
+<!-- Toast全屏 2********************************************************************-->
+<div class="toast-container position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="myToast2">
+      <div class="toast-header">
+          <strong class="me-auto">视频</strong>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="toast" aria-label="Close">关闭</button>
+      </div>
+      <div class="toast-body">
+          这是一个全屏MP4。
+          <br/>
+          <iframe id="bilibiliVideo" src="//player.bilibili.com/player.html?isOutside=true&aid=910124070&bvid=BV1iM4y1y7oA&cid=1097137119&p=1&autoplay=0" width="100%" height="600" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+      </div>
+
+      
+      
+
+      </video>
+    
+  </div>
+</div>
+
+<!-- 自定义全屏Toast样式 -->
+<style>
+/* 自定义全屏Toast样式 */
+.toast-container {
+  z-index: 1050; /* 确保Toast在最上层 */
+}
+
+.toast-container .toast {
+  width: 100vw;
+  max-width: none;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(255, 255, 255); /* 背景颜色和透明度 */
+  color: rgb(0, 0, 0); /* 文字颜色 */
+}
+</style>
+
+<script>
+function showToast2() {
+  var toastEl = document.getElementById('myToast2');
+  var toast = new bootstrap.Toast(toastEl);
+  toast.show();
+}
+</script>
+<!-- Toast全屏 ********************************************************************-->
+
+
+
+</body>
+</html>
